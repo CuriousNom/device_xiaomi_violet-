@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_violet.mk
+    $(LOCAL_DIR)/blaze_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_violet-eng \
-    infinity_violet-userdebug \
-    infinity_violet-user
+    blaze_violet-ap3a-eng \
+    blaze_violet-ap3a-userdebug \
+    blaze_violet-ap3a-user
