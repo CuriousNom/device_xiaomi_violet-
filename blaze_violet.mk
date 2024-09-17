@@ -14,17 +14,11 @@ $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Extra Stuffs
-INFINITY_BUILD_TYPE := OFFICIAL
-INFINITY_MAINTAINER := Aryan
-TARGET_BUILD_VIMUSIC := true
-USE_MOTO_CALCULATOR := true
-TARGET_BOOT_ANIMATION_RES := 1080
+# Extra stuffs
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_PICO_GAPPS := true
 BLAZE_BUILD_TYPE := OFFICIAL
 BLAZE_MAINTAINER := Aryan
-WITH_GAPPS := true
 
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
