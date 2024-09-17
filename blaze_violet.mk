@@ -9,7 +9,7 @@
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common InfinityX stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -19,6 +19,12 @@ INFINITY_BUILD_TYPE := OFFICIAL
 INFINITY_MAINTAINER := Aryan
 TARGET_BUILD_VIMUSIC := true
 USE_MOTO_CALCULATOR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_PICO_GAPPS := true
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := Aryan
+WITH_GAPPS := true
 
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
@@ -27,7 +33,7 @@ $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_violet
+PRODUCT_NAME := blaze_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
