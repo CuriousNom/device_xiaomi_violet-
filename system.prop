@@ -15,14 +15,6 @@ dalvik.vm.usejit=true
 dalvik.vm.dex2oat-threads=4
 dalvik.vm.dex2oat-filter=speed
 
-# Improve dex2oat speed
-dalvik.vm.image-dex2oat-filter=speed
-dalvik.vm.usejitprofiles=true
-
-# Disable kernel panic for better stability
-ro.kernel.android.checkjni=0
-ro.kernel.checkjni=0
-
 # Enable dalvik VM's experimental features
 dalvik.vm.dexopt-flags=m=y
 
